@@ -411,7 +411,7 @@ canvas{
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-image: url('./img/keagan-henman-xPJYL0l5Ii8-unsplash.jpg');
+    background-image: url('./img/keagan-henman-xPJYL0l5Ii8-unsplash.webp');
     background-size: cover;
     background-position: center;
 }
@@ -477,7 +477,7 @@ canvas{
 #page9 #left{
     height: 100%;
     width: 30%;
-    background-image: url('./back.jpg');
+    background-image: url('./back.webp');
     background-size: cover;
     background-position: center;
     position: relative;

@@ -48,6 +48,7 @@ ScrollTrigger.create({
     start: `top top`,
     end: `300% bottom`,
     pinSpacing:false,
+    scrub:true,
 });
 
 ScrollTrigger.create({
@@ -57,6 +58,7 @@ ScrollTrigger.create({
     start: `top top`,
     end: `300% bottom`,
     pinSpacing:false,
+    scrub:true,
 });
 
 ScrollTrigger.create({
@@ -66,21 +68,9 @@ ScrollTrigger.create({
     start: `top top`,
     end: `300% bottom`,
     pinSpacing:false,
+    scrub:true,
 });
 
-
-// gsap.from('#page8 #data',{
-//   width:'60%',
-//   height:'100%',
-//   duration:2,
-//   scrollTrigger:{
-//     trigger:'#page8',
-//     start:'center center',
-//     end:'bottom center',
-//     scroller:'#main',
-//     markers:true
-//   }
-// })
 
 var xscale = 1;
 var yscale = 1;
@@ -142,13 +132,4 @@ window.addEventListener("load", function(){
         })
 })
 
-gsap.from('#scroller',{
-  y:'30%',
-  scrollTrigger:{
-    trigger:'#scroller',
-    start:'top bottom',
-    end:'center center',
-    scroller:'#main',
-    scrub:true
-  }
-})
+
