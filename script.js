@@ -2,8 +2,16 @@ function locomotive() {
     gsap.registerPlugin(ScrollTrigger);
   
     const locoScroll = new LocomotiveScroll({
-      el: document.querySelector("#main"),
-      smooth: true ,
+      el: document.querySelector("#main"), // Your container
+      smooth: true, // Enable smooth scrolling
+      multiplier: 2, // Adjust the scroll speed (lower = slower, smoother)
+      smoothMobile: true, // Enable smooth scrolling on mobile
+      smartphone: {
+        smooth: true, // Smooth scrolling for smartphones
+      },
+      tablet: {
+        smooth: true, // Smooth scrolling for tablets
+      },
     });
     locoScroll.on("scroll", ScrollTrigger.update);
   
@@ -93,7 +101,7 @@ const right = document.querySelectorAll('.products-right');
 let move = document.querySelector('#mini-cicle');
 let text = document.querySelector('#mini-cicle p');
 left.forEach(element => {
-  element.addEventListener('mouseover', () =>{
+  element.addEventListener('mouseenter', () =>{
     move.style.width = `${200}px`;
     move.style.height = '200px';
     move.style.color = '#fff';
@@ -110,7 +118,7 @@ left.forEach(element => {
 });
 
 right.forEach(element => {
-  element.addEventListener('mouseover', () =>{
+  element.addEventListener('mouseenter', () =>{
     move.style.width = `${200}px`;
     move.style.height = '200px';
     move.style.color = '#fff';

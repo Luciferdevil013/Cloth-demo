@@ -169,6 +169,7 @@ html,body{
     -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
     -o-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    pointer-events: none;
 }
 
 #mini-cicle p{
