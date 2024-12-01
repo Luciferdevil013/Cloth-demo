@@ -48,7 +48,9 @@ ScrollTrigger.create({
     start: `top top`,
     end: `300% bottom`,
     pinSpacing:false,
-    scrub:true,
+    scrub:0.5,
+    anticipatePin: 1,
+    ease: "power3.out",
 });
 
 ScrollTrigger.create({
@@ -58,7 +60,9 @@ ScrollTrigger.create({
     start: `top top`,
     end: `300% bottom`,
     pinSpacing:false,
-    scrub:true,
+    scrub:0.5,
+    anticipatePin: 1,
+    ease: "power3.out",
 });
 
 ScrollTrigger.create({
@@ -68,7 +72,9 @@ ScrollTrigger.create({
     start: `top top`,
     end: `300% bottom`,
     pinSpacing:false,
-    scrub:true,
+    scrub:0.5,
+    anticipatePin: 1,
+    ease: "power3.out",
 });
 
 
