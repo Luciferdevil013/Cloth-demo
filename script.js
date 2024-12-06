@@ -138,4 +138,38 @@ window.addEventListener("load", function(){
         })
 })
 
+let product = document.querySelector('.product-show')
+function productShow(data){
+  const productImg = product.querySelector('img')
+  productImg.setAttribute('src',`${data}`)
+  gsap.to(product,{
+    x:'-100%',
+    opacity:1,
+    duration:1,
+  })
+}
 
+
+left.forEach(element => {
+  element.addEventListener('click',function () {
+    const ImgPath = this.dataset.value;
+    productShow(ImgPath);
+  })
+})
+
+right.forEach(element => {
+  element.addEventListener('click',function () {
+    const ImgPath = this.dataset.value;
+    productShow(ImgPath);
+  })
+})
+
+const Close = document.querySelector('#close');
+
+Close.addEventListener('click',() => {
+  gsap.to(product,{
+    x:'100%',
+    opacity:0,
+    duration:1
+  })
+})
